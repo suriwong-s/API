@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exjewel</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="all">
+
+      <div class="logo">
+        <img src="img/logo_exjewel.png" width="300">
+      </div>
+
+      <div class="start">
+       <h1>Estimate your jewel</h1>       
+        <form action="http://localhost:5000/estimate" method='GET'>
+          <div class="form">
+            Certificat N°: <input type="text" id="certificat_id" name="certificat_id" value="AB3344556700"><br>
+          </div>
+
+          <div class="form">
+           <div class="shape">
+              Shape : 
+           </div>      
+                  <select id="shape" name="shape" value="round">
+                    <option value="">--Please choose the shape--</option>
+                    <option value="round">round</option>
+                    <option value="pear">pear</option>
+                  </select>
+          </div>
+
+           <div class="form">
+              <div class="size">
+              Size :  
+              </div> 
+
+              <input type="number" step="any" id="size" name="size" ><br> <span class="character-counter" value="2.1"></span>
+            </div>
+
+          <div class="form">
+             <div class="color">
+               Color : 
+             </div> <select id="color" name="color" value="E">
+                         <option value="">--Please choose the color--</option>
+                          <option value="D">D</option>
+                          <option value="E">E</option>
+                          <option value="F">F</option>
+                          <option value="G">G</option>
+                          <option value="H">H</option>
+                          <option value="I">I</option>
+                          <option value="J">J</option>
+                          <option value="K">K</option>
+                          <option value="L">L</option>
+                          <option value="M">M</option>
+                          <option value="N">N</option>
+                      </select>
+          </div>
+
+          <div class="form">
+              <div class="clarity">
+                Clarity:
+              </div> 
+              <input type="text" id="clarity" name="clarity" value="VS2"><br>
+               <span class="character-counter" ></span> 
+          </div>
+            
+      
+
+          <div class="form">
+             <button type="submit" class="btn waves-effect waves-light" ><b>Estimate Now!</b></button>
+          </div>
+
+        </form>
+       
+      </div>
+    </div>
+          
+  </body>
+</html>

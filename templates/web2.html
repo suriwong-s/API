@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exjewel</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Here is your jewellery valued !</h1>
+        <div id="reference">
+          {% if items %}
+          <p>Shape :</p><span>{{items[0]}}</span>
+          <p>Low size :</p><span>{{items[1]}}</span>
+          <p>High size :</p><span>{{items[2]}}</span>
+          <p>Color :</p><span>{{items[3]}}</span>
+          <p>Clarity :</p><span>{{items[4]}}</span>
+          <p>Caratprice :</p><span>{{items[5]}}</span>
+          <p>Date :</p><span>{{items[6]}}</span>
+           {% endif %}
+        </div>
+    </div>
+  </body>
+</html>
